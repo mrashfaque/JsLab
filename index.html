@@ -115,7 +115,7 @@
     <script>
     document.getElementById("processBtn").addEventListener("click", function () {
 
-        // Task 1
+        // Task 1: Variables and String Concatenation
         var studentName = document.getElementById("studentName").value;
         var age = document.getElementById("studentAge").value;
         var isEnrolled = document.getElementById("isEnrolled").checked;
@@ -131,12 +131,21 @@
         var valueA = Number(document.getElementById("numA").value);
         var valueB = Number(document.getElementById("numB").value);
 
-        // Divide Value A by Value B
         var result = valueA / valueB;
 
-        // Display the result
         alert("Result of division: " + result);
+
+
+        // Task 3: Testing NaN
+        var wordValue = document.getElementById("wordValue").value;
+
+        // Attempt mathematical division using text
+        var nanResult = wordValue / 2;
+
+        // Display the result
+        alert("Result of text division: " + nanResult);
     });
 </script>
+
 </body>
 </html>
